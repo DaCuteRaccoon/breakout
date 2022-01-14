@@ -28,7 +28,7 @@ const colorMap = {
   'Y': 'yellow'
 };
 
-// Use a 2px gap between bricks
+// Use 2px gap between bricks
 const brickGap = 2;
 const brickWidth = 25;
 const brickHeight = 12;
@@ -39,8 +39,8 @@ const brickHeight = 12;
 const wallSize = 12;
 const bricks = [];
 
-// Create the level by looping over each row and column in the level1 array
-// and creating an object with the bricks position (x, y) and color
+// Create level by looping over each row and column in the level1 array
+// and creating object with bricks position (x, y) and color
 for (let row = 0; row < level1.length; row++) {
   for (let col = 0; col < level1[row].length; col++) {
     const colorCode = level1[row][col];
@@ -216,5 +216,5 @@ document.addEventListener('keyup', function(e) {
   }
 });
 
-// start the game
+// Start game
 requestAnimationFrame(loop);
